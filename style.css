@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Bauhaus-93';
+    src: url('assets/font/Bauhaus_93_Regular.ttf') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: #F0F0F0;
+}
+
+header{
+    display: flex;
+    padding-left: 79px;
+    padding-right: 39px;
+    margin-top: 34px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    font-family: "Red Hat Text", serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #8EA4F4;
+}
+
+header > .right-side{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-img{
+    background-color: #8EA4F4;
+    border-radius: 50%;
+    border: solid 1px white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+header > .right-side > .search{
+    display: flex;
+    background-color: transparent;
+    border: solid 0.5px #393939;
+    border-radius: 20px;
+    height: 30px;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+header > .right-side > .search > input{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+header > .right-side > .search > input:focus{
+    outline: none;
+}
+
+.main-screen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+.rotated-list-block{
+    display: flex; 
+    width: 37px; 
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 117px;
+    height: 150px;
+    align-items: flex-start;
+}
+
+.rotated-list{
+    display: flex;
+    gap: 55px;
+    transform: rotate(-90deg);
+    text-wrap: nowrap;
+}
+
+.rotated-list p{
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-block{
+    height: fit-content;
+}
+
+.main-text{
+    width: 437px;
+    height: 220px;
+}
+
+.main-text p{
+    font-family: 'Bauhaus-93';
+    font-size: 140px;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  -1px 0 black;
+    color: white;
+    line-height: 79%;
+}
+
+.main-text p > span{
+    font-family: 'Bauhaus-93';
+    font-size: 140px;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  -1px 0 black;
+    line-height: 79%;
+}
+
+.shadow-text{
+    position: relative;
+    bottom: 218px;
+    z-index: -100;
+}
+
+.aboba-text{
+    color: #0A1760;
+    font-weight: 300;
+    font-family: "Raleway", serif;
+    font-size: 20px;
+    width: 270px;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 36px;
+}
+
+.button-block{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+
+.button-block button{
+    border: solid 2px black;
+    width: 135px;
+    height: 57px;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shadow-button{
+    position: relative;
+    color: transparent;
+    z-index: -100;
+    bottom: 42px;
+    right: 8px;
+}
+
+.slider-buttons{
+    display: flex;
+    height: 75%;
+    align-items: flex-end;
+}
+
+.slider-button{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    border: solid 1px black;
+}
